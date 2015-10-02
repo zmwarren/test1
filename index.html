@@ -9,10 +9,122 @@
 	<link rel="stylesheet" href="main.css">
 	</head>
  <body>
- 
-  
-  
+ <!--Jumbotron-->
+ 	 <div class="jumbotron">
+  		<h1>Zach's Page!</h1>
+  		<p>Have you considered clicking the button on the bottom of the page?</p>
+  		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+	</div>
+ <!--Navbar-->
+ 	  <div class="navbar navbar-default navbar-fixed-top"><!--container class allows contained elements to wrap to accomodate browser size-->
+        <div class="container">
+            <div class="navbar-header navbar">
+                <a href="/" class="navbar-brand">Zach's Page</a>
+                    <button type="button" class="navbar-toggle"
+                        data-toggle="collaspse"
+                        data-target=".navbar-collapse">
+                        
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </div>
+                <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+                    <li><a href="tickets.html">Directions</a></li>
+                    <li><a href="stations.html">How to click that red button</a></li>
+                    <li class="open">
+                        <a href="about.html" data-target="#" data-toggle='dropdown'>About <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="story.html">My Story</a></li>
+                            <li><a href="contact.html">Contact Me</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://twitter.com/...">Twitter</a></li>
+                            <li><a href="http://facebook.com/...">Facebook</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+        <div class="row well well-lg">
+            <div class="col-md-6">
+                <h2>Test Number One</h2>
+                <img src="portrait.jpg" alt="flexing"/>
+            </div>
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, commodo erroribus scribentur pro an, ridens putent eu eum, an vidit vivendum temporibus eam. Eius minim indoctum no per, has eius impedit ad, no vix sale choro. Antiopam cotidieque est ei. Ea viderer veritus interpretaris vix, ut per stet affert posidonium. His cu alia inani alienum.
 
+				At propriae appellantur delicatissimi cum. Ius vitae mucius disputando et. Inani definiebas nec ei. Altera persius alienum eam an.
+
+				Ne eam clita consul oportere, legere ignota id vis. Usu an simul repudiandae, ei sale percipit mei, amet honestatis quo ne. Pri posse legimus deterruisset ut. Erat tantas nominavi in pri, at quo purto antiopam. Accusata salutandi constituto ad sea, sit eius conceptam ei. Postulant appellantur comprehensam no mea, tamquam nusquam at mel.
+
+				Vero prodesset mel ea, pro ex mucius fuisset dissentiet. Omnium comprehensam eu usu, ea velit laoreet adipisci usu. Minim complectitur pri ex, eam ad populo mentitum suscipiantur. Vim legere comprehensam ne, habeo postea animal ex has. Per te wisi tollit.
+
+				Vel in illum inani, accumsan praesent ei ius. At utinam conceptam pri. Sonet reprimique qui cu, lorem novum graece his no. Augue persius partiendo ut quo, has an nominati liberavisse concludaturque.</p>
+
+            </div>
+        
+            <div class="col-md-6 visible-md visible-lg">
+            	<p></p>
+            </div>
+        </div>
+    </div>
+
+<!--Glyphbar-->
+    <div class="container-fluid"><!--container-fluid class stretches contained elements across page-->
+        <div class="row features text-center">
+            <div class="col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <i class="glyphicon glyphicon-briefcase"></i>
+                <h3>My Projects</h3> 
+        </div>
+            <div class="col-sm-4 col-xs-6">
+                <i class="glyphicon glyphicon-random"></i>
+                <h3>My Dogs</h3>              
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <i class="glyphicon glyphicon-send"></i>
+                <h3>My Blog&reg;</h3> 
+            </div>
+        </div>
+ 	
+ 
+ <!--FOOTE With Clicker Button-->
+  	<div class="row footer">
+            <div class="col-sm-4">
+                <h2>Spam the counter button!</h2>
+                <!--HERE'S THE COUNTER BUTTON-->
+                <button id="counterButton" type="button" class="btn btn-danger glyphicon glyphicon-heart">Click This Button Repeatedly!</button>
+                <!--HERE'S WHERE THE COUNT SHOWS UP-->
+                <h4 id="numberOfClicks"></h5>
+            </div>
+            <div class="col-sm-2">
+                <h4>Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="stations.html">Stations</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h4>Stay In Touch</h4>
+                <ul class="list-unstyled">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="twitter.html">Twitter</a></li>
+                    <li><a href="facebook.html">Facebook</a></li>
+                </ul>    
+            </div>
+            <div class="col-sm-3">
+                <h4>Get In Touch</h4>
+              
+            </div>
+        </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!--Main js-->
